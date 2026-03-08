@@ -1,38 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDF Air Conditioning</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MDF Air Conditioning</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f7fa;color:#1a2a3a;line-height:1.6}
+
+header{background:#1f6fa8;color:white;padding:18px 30px;position:sticky;top:0;z-index:1000}
+.header-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+nav a{color:white;margin-left:20px;text-decoration:none;font-weight:bold}
+nav a:hover{opacity:.8}
+
+.hero{background:linear-gradient(rgba(31,111,168,.85),rgba(31,111,168,.85)), url('https://images.unsplash.com/photo-1581094794329-c8112a89af12');background-size:cover;background-position:center;color:white;padding:120px 20px;text-align:center}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{font-size:18px;margin-bottom:25px}
+
+.container{max-width:1100px;margin:auto;padding:70px 20px}
+
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin-top:30px}
+.card{background:white;padding:25px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.08)}
+.card h3{margin-top:0}
+
+.about{background:white}
+
+.why{background:#eef4f9}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:30px}
+
+.highlight{background:#1f6fa8;color:white;padding:40px;text-align:center;border-radius:12px;margin-top:40px}
+
+.contact{background:#f0f4f8;text-align:center}
+.contact p{margin:8px 0}
+
+button{background:#1f6fa8;color:white;border:none;padding:14px 28px;border-radius:8px;font-size:16px;cursor:pointer}
+button:hover{background:#155782}
+
+.cta{margin-top:20px}
+
+footer{background:#1a2a3a;color:white;text-align:center;padding:25px;font-size:14px}
+
+@media(max-width:700px){
+.hero h1{font-size:32px}
+nav{display:none}
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to MDF Air Conditioning</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer installation, maintenance, and repair of air conditioning systems.</p>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>MDF Air Conditioning has been serving the community since 2010.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email us at <a href="mailto:info@mdfaircon.com">info@mdfaircon.com</a></p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 MDF Air Conditioning. All rights reserved.</p>
-    </footer>
+
+<header>
+<div class="header-container">
+<h2>MDF Air Conditioning</h2>
+<nav>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#special">Special</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<h1>Reliable Air Conditioning Experts</h1>
+<p>Installs • Servicing • Repairs</p>
+<p>Keeping homes cool and comfortable all year round.</p>
+<div class="cta">
+<button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Free Quote</button>
+</div>
+</section>
+
+<section id="services" class="container">
+<h2>Our Services</h2>
+<p>Professional air conditioning services you can rely on.</p>
+
+<div class="services">
+
+<div class="card">
+<h3>Evaporative Aircon</h3>
+<p>Installation, servicing and repairs for evaporative air conditioning systems.</p>
+</div>
+
+<div class="card">
+<h3>Air Conditioning Servicing</h3>
+<p>Full system servicing from <strong>$120</strong> to keep your unit running efficiently.</p>
+</div>
+
+<div class="card">
+<h3>Hydrocell Cleaning</h3>
+<p>Professional Hydrocell split system cleaning from <strong>$220</strong>.</p>
+</div>
+
+<div class="card">
+<h3>Split System Installations</h3>
+<p>Supply and install of modern, energy efficient split systems.</p>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="container about">
+<h2>About MDF Air Conditioning</h2>
+<p>MDF Air Conditioning provides reliable and professional air conditioning services for homes and small businesses. We focus on quality workmanship, honest pricing and friendly service. Whether you need a new system installed or your existing unit serviced, you can trust MDF to keep your home comfortable.</p>
+</section>
+
+<section class="container why">
+<h2>Why Choose Us</h2>
+
+<div class="why-grid">
+
+<div class="card">
+<h3>Licensed Professionals</h3>
+<p>Fully licensed and experienced air conditioning specialists.</p>
+</div>
+
+<div class="card">
+<h3>Affordable Pricing</h3>
+<p>Transparent pricing with no hidden costs.</p>
+</div>
+
+<div class="card">
+<h3>Reliable Service</h3>
+<p>On time, friendly and professional every job.</p>
+</div>
+
+<div class="card">
+<h3>Quality Workmanship</h3>
+<p>We take pride in doing the job right the first time.</p>
+</div>
+
+</div>
+
+<div id="special" class="highlight">
+<h2>⭐ Limited Time Special</h2>
+<p><strong>Split System Supplied & Installed from $1500 until August</strong></p>
+</div>
+
+</section>
+
+<section id="contact" class="container contact">
+<h2>Contact MDF Air Conditioning</h2>
+
+<p><strong>Daniel</strong></p>
+<p>📞 0400 929 199</p>
+<p>RHL: L138137</p>
+<p>EW: 164 507</p>
+
+<div class="cta">
+<button onclick="window.location='tel:0400929199'">Call Now</button>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 MDF Air Conditioning</p>
+<p>Professional Air Conditioning Installs, Servicing & Repairs</p>
+</footer>
+
 </body>
 </html>
